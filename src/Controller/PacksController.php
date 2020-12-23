@@ -19,7 +19,7 @@ class PacksController extends AppController {
     }
 
     public function processPacks($id = false, $msisdn = false){
-        if($id & $msisdn){
+        if($id && $msisdn){
             $options = array(
                 'conditions' => array(
                     'id' => $id
